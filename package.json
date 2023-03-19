@@ -1,0 +1,30 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "description": "Ref: https://khalilstemmler.com/blogs/typescript/node-starter-project/",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npx nodemon",
+    "start": "npm run build && node build/index.js",
+    "build": "rimraf ./build && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maygargau/nodewithts.git"
+  },
+  "keywords": [],
+  "author": "maygargau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maygargau/nodewithts/issues"
+  },
+  "homepage": "https://github.com/maygargau/nodewithts#readme",
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "nodemon": "^2.0.21",
+    "rimraf": "^4.4.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
